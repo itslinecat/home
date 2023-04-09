@@ -476,6 +476,21 @@ body .twitter svg {
   
 
 .card .icon {
-  margin-right: 10px;
+  z-index: 2;
+  position: relative;
+  display: table;
+  padding: 8px;
 }
+
+.card .icon svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 24px;
+  height: 24px;
+  transform: translateZ(0);
+  color: var(--card-icon-color);
+  transition: color 0.25s;
+}
+  
 }
